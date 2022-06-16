@@ -1,5 +1,5 @@
-import math
 import datetime
+import math
 
 from math import sqrt
 # from os import *
@@ -9,10 +9,10 @@ def take_all_list(arg1, arg2, arg3=0, *args, **kwargs):
     """
     Docstring for take_all_list. Basically, this is a useless function, but would test how well you know about PEP-8.
     """
-    list_a = [1, 2, 3, 4, 5]            5
+    list_a = [1, 2, 3, 4, 5]
     var_b = (list_a[0] * list_a[1]) + list_a[2] - 3 + list_a[3]
     print(arg1, arg2)
-    if arg3 == 0:
+    if arg3 != 0:
         print(arg3)
     if 5 < arg3 < 10:
         list_a.append(arg3)
@@ -30,7 +30,7 @@ def print_all_number(n):
     second = n + 1
     third = n + 2
     fourth = n + 3
-    print(first, second, third, fourth)
+    print(f"{first}, {second}, {third}, {fourth}")
     for n in range(n):
         print(n)    # This will print n
         m += n       # This will increment m with n
@@ -42,16 +42,16 @@ def print_all_number(n):
         print("MALI!")
 
 
-class ThisIsAStudentClass:
-    FIRSTNAME = 'A'
-    LASTNAME = 'A'
+class ThisIsStudentClass:
+    FIRSTNAME = "A"
+    LASTNAME = "A"
 
     def __init__(self, age, address):
         self.AGE = age
         self.ADDRESS = address
 
     def get_name(self):
-        return f"{self.LASTNAME}, {self.FIRSTNAME}"
+        return self.LASTNAME, self.FIRSTNAME
 
     def another_function(self):
         # This will do something. I promise.
