@@ -9,6 +9,7 @@ class BankAccount:
         self.balance += number
         print("deposited amount: ", number)
         print(f"Net balance: {self.balance}")
+        return self.balance
 
     def withdraw(self, number):
         if number <= self.balance:
@@ -18,6 +19,7 @@ class BankAccount:
         else:
             print(f"You tried to withdraw {number}, you only have {self.balance} in your account")
             print("Insufficient Funds")
+        return self.balance
 
     def add_interest(self):
         compute_interest = self.balance * self.interest_rate

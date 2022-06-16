@@ -1,4 +1,4 @@
-def saveToFile():
+def save_to_file():
     lst = []
     try:
         read_lines = open('exer5.txt', 'r')
@@ -27,4 +27,4 @@ def saveToFile():
         file.close()
 
 
-saveToFile()
+save_to_file()
